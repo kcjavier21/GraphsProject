@@ -1,0 +1,97 @@
+<HTML>
+<HEAD>
+    <TITLE> Graph Simulator</TITLE>
+</HEAD>
+    
+    <LINK rel = "stylesheet" href = "stylesheet.css">
+        
+
+    
+<BODY>
+    
+    <div id = "header">
+        <H1> Graph Simulator </H1>
+    </div>
+
+    <div id="sidebar">
+      <br><br><br><br> <h2>Section<br>Menu</h2> <br><br><br><br>
+      <ul>
+        <li><a id="selected" href = "intro.html">Introduction</a></li>
+        <li><a href = "fundamentals.html">Basic Terms</a></li>
+        <li><a href = "types.html">Types of Graphs</a></li>
+        <li><a href = "graphs.html"><b>Graph Simulator</b></a></li>
+      </ul>
+    </div>
+    </div>
+
+
+  <div id="toggle-btn" onclick="toggleSidebar(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+
+  <br>
+  
+    
+    <div id = "ButtonSection">
+    
+    <BUTTON id = "addvertex" onclick = "Add()"><B>Add Vertex</B></BUTTON>
+    <BUTTON id = "connect" onclick = "Con()"><B>Connect Vertex</B></BUTTON>
+    <BUTTON id = "scan" onclick = "ScanAlgo()"><B>Scan</B></BUTTON> 
+    <BUTTON id = "remove" onclick = "Remove()"><B>Clear Field</B></BUTTON>
+  </div>
+  <br>
+   
+  
+    
+<div id = "Algorithm">       
+    <label for="algo"><B>Choose an Algorithm: </B></label>
+    
+<select id="algo">
+  <option value="Null">Null Graph</option>
+    <option value="Trivial">Trivial Graph</option>
+    <option value = "Simple">Simple Graph</option>
+  <option value="Connected">Connected Graph</option>
+  <option value="Complete">Complete Graph</option>
+    <option value="Cycle">Cycle Graph</option>
+    <option value="Wheel">Wheel Graph</option>
+    <option value = "Star">Star Graph</option>
+    
+</select>
+
+</div>
+   <!--
+    <canvas id= "CanvasArea" width = "700px" height = "600px" onclick = "EditCanvas()">
+    </canvas>
+    -->
+    
+    <canvas id= "CanvasArea" width = "800px" height = "550px" >
+    </canvas>
+
+
+      
+  <script src = "nav.js"> </script>
+  <SCRIPT src = "graphs.js"> </SCRIPT>  
+
+  <br> 
+
+  <br>
+  
+  <div class = "move">
+      <a href = "types.html"> <<< PREV </a>
+  </div>
+  
+  <div id = "source">
+    <br>
+  Source: https://www.tutorialspoint.com/graph_theory
+  </div>
+ 
+  <div class = "footer">  
+   <p>© Ken Javier | All Rights Reserved 2020<p>
+  </div>
+
+    
+    </BODY>
+    
+</HTML>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <LINK rel = "stylesheet" href = "styletypes.css">
+        <script src = "nav.js"> </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Theory - Introduction</title>
+</head>
+    <body>
+
+    <div id = "header">
+          <h1>Graph Theory</h1>  
+    </div>
+
+    <div id="sidebar">
+        <br><br><br><br> <h2>Section<br>Menu</h2> <br><br><br><br>
+        <ul>
+          <li><a id="selected" href = "intro.html">Introduction</a></li>
+          <li><a href = "fundamentals.html">Basic Terms</a></li>
+          <li><a href = ""><b>Types of Graphs</b></a></li>
+          <li><a href = "graphs.html">Graph Simulator</a></li>
+        </ul>
+      </div>
+
+
+    <div id="toggle-btn" onclick="toggleSidebar(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class = "discuss-types">
+        <h1>Types of Graph</h1><br><br>
+        <p>There are various types of graphs depending upon the number of vertices, number of edges, interconnectivity, and their
+          overall structure. We will discuss only a certain few important types of graphs.  
+        </p>
+        <br>
+        <br>
+        <br>
+        <h2>Null Graph</h2>
+        <br>
+        <p>A <b>graph having no edges</b> is called a Null Graph.</p>
+        <br>
+        <img src = "./Images/Types of Graphs/Null.png" id = "null">
+        <br>
+        <br>
+        <br>
+        <h2>Trivial Graph</h2>
+        <br>
+        <p>A graph with only <b>one vertex</b> is called a Trivial Graph.</p>
+        <br>
+        <img src = "./Images/Types of Graphs/Trivial.png" id = "trivial">
+        <br>
+        <br>
+        <br>
+        <h2>Connected Graph</h2>
+        <br>
+        <p>A graph G is said to be connected <b>if there exist a path between every pair of vertices</b>.
+            There should be at least one edge for every vertex in the graph. So that we can say that it is 
+            connected to some other vertex at the other side of the edge.
+        </p>
+        <br>
+        <img src = "./Images/Types of Graphs/Connected.png" id = connected>
+        <br>
+        <br>
+        <br>
+        <h2>Complete Graph</h2>
+        <br>
+        <p>A simple graph with <b>'n'</b> mutual vertices is called a complete graph and it is <b>denoted by 'Kn'</b>
+        In the graph, <b>a vertex should have edges with all other vertices,</b> then it called a complete graph.
+        <br>
+        <p>In other words, if a vertex is connected to all other vertices in a graph, then it is called a complete graph</p>
+         <br>
+         <img src = "./Images/Types of Graphs/CompleteGraph.png" id = "complete">       
+        </p>
+        <br>
+        <br>
+        <br>
+        <h2>Cycle Graph</h2>
+        <br>
+        <p>A simple graph with <b>'n'</b> vertices <b>(n >= 3)</b> and 'n' edges is called a cycle graph if all its edges form a cycle of length 'n'.</p>   
+        <br>
+        <img src = "./Images/GraphSample.png" id = "cycle">
+        <br>
+        <br>
+        <br>
+        <h2>Wheel Graph</h2>
+        <br>
+        <p>A wheel graph is obtained from a cycle graph <b>C<font size = 2>n-1</font></b> </p> by adding a new vertex. That new vertex is called a <b>Hub</b>
+        which is connected to all the vertices of C<font size = 2>n</font>.
+        <br>
+        <br>
+        <img src = "./Images/Types of Graphs/Wheel.png" id = "wheel">
+        <br>
+        <br>
+        <br>
+        <h2>Star Graph</h2>
+        <br>
+        <p>A star graph is a graph which has single vertex belongs to one set and all the remaining vertices belong to the other set.</p>
+        <br>
+        <br>
+        <img src = "./Images/Types of Graphs/Star.png" id = "star">
+        <br>
+        <br>
+
+
+    </div>
+
+
+    <br> 
+
+    <br>
+    
+    <div class = "move">
+        <a href = "fundamentals.html"> <<< PREV </a> <a href = "graphs.html">NEXT >>></a>
+    </div>
+    
+    <div id = "source">
+      <br>
+    Source: https://www.tutorialspoint.com/graph_theory
+    </div>
+   
+    <div class = "footer">  
+     <p>© Ken Javier | All Rights Reserved 2020<p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+                    </body>
+    </html>

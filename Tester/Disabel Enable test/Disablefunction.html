@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>My test function enabler</title>
+<script type="text/javascript">
+var Enabled=true;
+function RunMyFunction()
+{
+if(Enabled == true)
+{
+alert("This function is enabled");
+}else
+{
+alert("This function is disabled");
+}
+}
+</script>
+</head>
+<body>
+<input type="button" value="Enable my function" onclick="Enabled=true;RunMyFunction();">
+<input type="button" value="Disable my function" onclick="Enabled=false;RunMyFunction();">
+</body>
+</html>

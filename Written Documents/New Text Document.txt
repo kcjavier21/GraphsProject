@@ -1,0 +1,135 @@
+IMPROVEMENTS:
+
+
+
+-----------------------------------------------
+MARCH 23
+
+    
+function EditCanvas()
+
+{
+    
+    canvas.addEventListener('mousedown',XVal, false);
+    canvas.addEventListener('mouseup',YVal, false);
+    
+    console.log(XVal(event));
+    console.log(YVal(event));
+    
+    var fx = XVal(event);
+    var fy = YVal(event);
+    
+
+    function XVal(event)
+    {
+
+        var rect = canvas.getBoundingClientRect();
+        var cx = rect.left;
+        var x = event.clientX;
+        x = x - cx;
+  
+        //console.log(x, y);
+        return x;
+}
+    
+    function YVal(event)
+    {
+
+        var rect = canvas.getBoundingClientRect();
+        var cy = rect.top;
+        var y = event.clientY;
+        y = y - cy;
+
+        //console.log(x, y);
+    
+        return y;
+    }
+    
+context.beginPath();
+context.lineWidth = 1;
+context.arc(fx, fy, 10, 0, Math.PI/360,true);
+context.strokeStyle = "#000000";
+context.fillStyle = "#3370d4";
+context.stroke();
+context.fill(); 
+}  
+
+
+--------------------------------------------------------------
+
+
+march 23 5;36pm
+
+
+
+
+var canvas = document.getElementById("CanvasArea");
+var context = canvas.getContext("2d");
+
+canvas = document.getElementById("CanvasArea").style.pointerEvents = "none";
+
+
+function AddVertex()
+{
+    canvas = document.getElementById("CanvasArea").style.pointerEvents = "auto";
+}
+
+
+function EditCanvas()
+
+{
+    canvas = document.getElementById("CanvasArea");
+    context = canvas.getContext("2d");
+    canvas.addEventListener('mousedown',XVal, false);
+    canvas.addEventListener('mouseup',YVal, false);
+    
+    console.log(XVal(event));
+    console.log(YVal(event));
+    
+    var fx = XVal(event);
+    var fy = YVal(event);
+    
+
+    function XVal(event)
+    {
+
+        var rect = canvas.getBoundingClientRect();
+        var cx = rect.left;
+        var x = event.clientX;
+        x = x - cx;
+  
+        //console.log(x, y);
+        return x;
+}
+    
+    function YVal(event)
+    {
+
+        var rect = canvas.getBoundingClientRect();
+        var cy = rect.top;
+        var y = event.clientY;
+        y = y - cy;
+
+        //console.log(x, y);
+    
+        return y;
+    }
+    
+context.beginPath();
+context.lineWidth = 1;
+context.arc(fx, fy, 10, 0, Math.PI/360,true);
+context.strokeStyle = "#000000";
+context.fillStyle = "#3370d4";
+context.stroke();
+context.fill(); 
+}  
+    
+
+__________--------------------------------------------
+
+
+
+
+
+
+
