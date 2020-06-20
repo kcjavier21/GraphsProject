@@ -1,6 +1,7 @@
 body{
     padding: 0px;
     margin: 0px;
+   
 }
 
 #header
@@ -67,7 +68,6 @@ body{
   
   #sidebar ul li a {
     padding: 6px;
-  
     text-decoration: none;
     color: #ccc;
   }
@@ -79,9 +79,7 @@ body{
   }
   
   
-  
   #sidebar ul li a b{
-   
     color: #407EEA;
   }
   
@@ -94,7 +92,6 @@ body{
   #sidebar.active {
     transform:perspective(1200px) rotateY(0deg);
   }
-  
   
   
   #toggle-btn {
@@ -132,14 +129,9 @@ body{
   }
   
 
-
-
-#CanvasArea
-{
+#CanvasArea {
     border: 1px;
     border-style: solid;
-    /*height: 600px;
-    width: 700px; */
     align-content: center;
     padding-left: 0;
     padding-right: 0;
@@ -151,9 +143,7 @@ body{
 }
 
 
-
-#ButtonSection
-{
+#ButtonSection {
     align-content: center;
     text-align:center;
     padding: 10px;
@@ -161,27 +151,23 @@ body{
 }
 
 
-#addvertex
-{
+#addvertex {
     height: 30px;
     width: 130px;
 }
 
-#remove
-{
+#remove {
     height: 30px;
     width: 130px;
 }
 
 
-#connect
-{
+#connect {
     height: 30px;
     width: 130px;
 }
 
-#scan
-{
+#scan {
     height: 30px;
     width: 130px;
 }
@@ -198,7 +184,6 @@ body{
   width: 100px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .move a {
@@ -219,12 +204,10 @@ body{
 
 .move a:hover {
   text-decoration: none;
-  
   background-color:rgb(160, 194, 253);
   font-weight: bold;
   transition:all 400ms ease;
 }
-
 
 
 #source {
@@ -234,9 +217,7 @@ body{
 }
 
 
-
-.footer
-{
+.footer {
     font-family: Century Gothic;
     text-align: center;
     padding: 10px;
@@ -246,19 +227,13 @@ body{
     height: 12px;
     width: 100%;
     align-content: center;
-    top: 0px;
     margin-top: 5px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
     bottom: 0px;
-    position: arelative;
-    
 }
 
 .footer p {
-  margin-left: 500 auto;
-  margin-right: 500 auto;
+  margin: 0 auto;
+  
 }
 
 
